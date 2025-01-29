@@ -1,0 +1,53 @@
+.nav-bar{
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2) ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 1300px;
+    height: 50px;
+    border-radius: 12px;
+    justify-content: space-between;
+    display: flex;
+}
+.grooveLogo{
+    width: 100px;
+    height: 100px;
+}
+.btn{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  border: 2px transparent solid rgba(0, 0, 0, 0.2) ;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #e17c46;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+.sidebar{
+  border-radius: 12px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  justify-content: space-around;
+  transition: 2;
+}
+.sidebar:hover{
+  width: 150px;
+}
+.dashboard{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
