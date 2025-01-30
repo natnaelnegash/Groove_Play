@@ -35,19 +35,68 @@ button:hover {
   }
 .sidebar{
   border-radius: 12px;
-  border: 2px solid white;
+  border: 2px solid rgba(0, 0, 0, 0.2) ;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  width: 50px;
+  width: 60px;
+  height: 60vh;
   justify-content: space-around;
   transition: 2;
 }
 .sidebar:hover{
-  width: 150px;
+}
+.sidebar-btn{
+  transition: 0.3s;
+  border-radius: 12px;
+}
+.sidebar-btn:hover{
+  background: #e17c46;
 }
 .dashboard{
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.dashboard-body{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  gap: 10px;
+}
+
+.card{
+  width: 180px;
+  height: 220px;
+  background: white;
+  border-radius: 12px;
+  flex-direction: column;
+  padding: 2px;
+  display: flex;
+  overflow-x: auto;
+}
+.card-img{
+  position: relative;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 100%;
+  object-fit: cover;
+  background-color: red;
+  flex: 3;
+}
+.card-details{
+  flex: 1;
+  background-color: blue;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.feed{
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-between;
+  flex: 1;
+  gap: 10px;
 }

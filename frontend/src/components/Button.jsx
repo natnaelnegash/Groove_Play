@@ -7,19 +7,9 @@ import { TbPlayerPlayFilled } from "react-icons/tb";
 import { IoSettingsSharp } from "react-icons/io5";
 
 const Button = (prop) => {
-  const icons = {
-    dashboard: <MdSpaceDashboard />,
-    explore: <MdExplore />,
-    player: <TbPlayerPlayFilled />,
-    settings: <IoSettingsSharp />,
-  };
   return (
     <Link to={prop.path}>
-      <button className="btn">
-        {icons.forEach((element) => {
-          element;
-        })}
-      </button>
+      <button className="btn">{prop.name}</button>
     </Link>
   );
 };
