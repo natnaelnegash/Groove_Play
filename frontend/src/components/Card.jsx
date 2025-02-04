@@ -1,11 +1,12 @@
 import React from "react";
 
-const Card = () => {
+const Card = (data) => {
   return (
     <div className="card">
-      <div className="card-img">a</div>
-      <div className="card-details">1</div>
+      <img className="card-img" src={data.data.images[0].url}></img>
+      <div className="card-details">{data.data.description}</div>
     </div>
+    // console.log(data.data.images[0].url)
   );
 };
 

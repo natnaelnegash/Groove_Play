@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "./Card";
+import { DataContext } from "../pages/Dashboard";
 
 const Feed = () => {
-  const m = [1, 2, 3, 4, 5, 6];
+  const playlists = useContext(DataContext);
   return (
     <div className="feed">
-      {m.map((i, inn) => (
-        <Card key={inn}></Card>
+      {playlists.map((playlist, index) => (
+        <Card key={index} data={playlist}></Card>
       ))}
     </div>
   );
