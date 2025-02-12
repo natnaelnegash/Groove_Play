@@ -1,0 +1,24 @@
+.sidebar{
+    border-radius: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.2) ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 60vh;
+    justify-content: space-around;
+    transition: 2;
+  }
+  .sidebar img {
+    border-radius: 12px;
+    padding: 5px;
+  }
+  .sidebar:hover{
+  }
+  .sidebar-btn{
+    transition: 0.3s;
+    border-radius: 12px;
+  }
+  .sidebar-btn:hover{
+    background: #e17c46;
+  }

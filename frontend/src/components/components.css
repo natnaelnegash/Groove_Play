@@ -1,66 +1,24 @@
-.nav-bar{
-    background: transparent;
-    border: 2px solid rgba(0, 0, 0, 0.2) ;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 1300px;
-    height: 50px;
-    border-radius: 12px;
-    justify-content: space-between;
-    display: flex;
-}
+
 .grooveLogo{
     width: 100px;
     height: 100px;
 }
-.btn{
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  border: 2px transparent solid rgba(0, 0, 0, 0.2) ;
-  background-color: transparent;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-    border-color: #e17c46;
-  }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
-.sidebar{
-  border-radius: 12px;
-  border: 2px solid rgba(0, 0, 0, 0.2) ;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+.main-body{
   display: flex;
-  flex-direction: column;
-  width: 60px;
-  height: 60vh;
-  justify-content: space-around;
-  transition: 2;
-}
-.sidebar:hover{
-}
-.sidebar-btn{
-  transition: 0.3s;
-  border-radius: 12px;
-}
-.sidebar-btn:hover{
-  background: #e17c46;
+  justify-content: space-between;
+  width: 90vw;
 }
 .dashboard{
-  height: 100%;
+  position: relative;
+  height: 95%;
+  width: 95vw;
   display: flex;
-  flex-direction: column;
+  gap: 20px;
   justify-content: space-between;
 }
 
 .dashboard-body{
+  max-width: 95%;
   display: flex;
   justify-content: space-between;
   border-radius: 12px;
@@ -90,65 +48,8 @@ button:hover {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 } */
-.card {
-  width: 180px;
-  height: 220px;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  padding: 2px;
-  overflow: hidden; /* Prevents content overflow */
-  background: #1e1e1e; /* Dark background for contrast */
-  color: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-}
-
-.card-img {
-  width: 100%;
-  /* height: 140px;  */
-  flex: 4;
-  object-fit: cover;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-.card-details {
-  flex: 0;
-  padding: 8px;
-  font-size: 12px;
-  line-height: 1.4;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  background: transparent; /* Slight transparency */
-  overflow-y: hidden; /* Enables scrolling for long text */
-  max-height: 60px; /* Ensures a defined space */
-  text-overflow: ellipsis;
-  white-space: normal;
-  /* scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.5) transparent; Custom scrollbar */
-}
 
 /* Hover effect: Slide up details */
 /* .card:hover .card-details {
   max-height: 100px;
 } */
- .card-img:hover {
-  flex: 3;
- }
- .card-details:hover {
-  flex: 1;
- }
-
-.feed{
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  justify-content: space-between;
-  flex: 1;
-  gap: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  grid-row: auto;
-  grid-auto-flow: column ;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0) transparent;
-}

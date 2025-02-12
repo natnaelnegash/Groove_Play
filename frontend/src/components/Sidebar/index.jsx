@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Button from "./Button";
+import Button from "../Button";
 import { MdSpaceDashboard } from "react-icons/md";
 import { MdExplore } from "react-icons/md";
 import { TbPlayerPlayFilled } from "react-icons/tb";
 import { IoSettingsSharp } from "react-icons/io5";
 import { Link } from "react-router";
-import apiClient from "../../spotify";
+import apiClient from "../../../spotify";
+import "./Sidebar.css";
 
 const Sidebar = () => {
   const [profilePricture, setProfilePricture] = useState(

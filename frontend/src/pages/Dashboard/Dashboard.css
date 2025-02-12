@@ -1,0 +1,16 @@
+.dashboard{
+    position: relative;
+    height: 95%;
+    width: 95vw;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .dashboard-body{
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    gap: 10px;
+  }

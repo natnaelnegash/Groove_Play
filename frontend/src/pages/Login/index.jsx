@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
-import { loginEndpoint } from "../../spotify";
-import Button from "../components/Button";
+import { loginEndpoint } from "../../../spotify";
+import Button from "../../components/Button";
 
 const Login = () => {
   return (

@@ -2,11 +2,11 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  /* border: 2px solid yellow; */
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
+  height: 98%;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,13 +23,11 @@ a:hover {
 }
 
 body {
-  margin: 0;
   display: flex;
-  /* place-items: center; */
-  min-width: 320px;
-  max-height: 100vh;
-  margin: 15px;
-  height: 95vh;
+  max-width: 98%;
+  max-height: 98%;
+  position: relative;
+  /* border: 2px solid red; */
 }
 
 h1 {

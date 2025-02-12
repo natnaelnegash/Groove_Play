@@ -1,7 +1,7 @@
 import React from "react";
-import "./components.css";
-import grooveLogo from "../assets/groovehq.svg";
-import Button from "./Button";
+import "./Nav.css";
+import grooveLogo from "../../assets/groovehq.svg";
+import Button from "../Button";
 
 const Nav = () => {
   return (
