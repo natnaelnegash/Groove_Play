@@ -19,6 +19,10 @@
     transition: 0.3s;
     border-radius: 12px;
   }
+  .sidebar-btn .btn-highlight{
+    background-color: #e17c46;
+    color: #e17c46;
+  }
   .sidebar-btn:hover{
     background: #e17c46;
   }

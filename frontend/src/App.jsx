@@ -6,13 +6,16 @@ import Player from "./pages/Player";
 import Profile from "./pages/Profile";
 import { BrowserRouter, Route, Routes } from "react-router";
 import Login from "./pages/Login";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { setClientToken } from "../spotify";
 import Sidebar from "./components/Sidebar";
 import Nav from "./components/Nav/";
+import PlayerContext from "./context/PlayerContext";
 
 function App() {
   const [token, setToken] = useState("");
+  const audioRef = useContext(PlayerContext);
+  const track = useContext(PlayerContext);
 
   useEffect(() => {
     const token = window.localStorage.getItem("token");
@@ -45,6 +48,7 @@ function App() {
             <Route path="/player" element={<Player />}></Route>
           </Routes>
         </div>
+        <audio ref={audioRef} src={track} preload="auto"></audio>
       </div>
     </BrowserRouter>
   );

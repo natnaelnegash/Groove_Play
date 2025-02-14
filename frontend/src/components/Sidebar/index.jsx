@@ -9,6 +9,7 @@ import apiClient from "../../../spotify";
 import "./Sidebar.css";
 
 const Sidebar = () => {
+  const [hash, setHash] = useState(window.location.href.toString());
   const [profilePricture, setProfilePricture] = useState(
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQRzaHs1zGchr1Rk5QgoiFd-mdO4sWnTYmOw&s"
   );
@@ -22,14 +23,20 @@ const Sidebar = () => {
     apiClient.get("me").then((response) => {
       setProfilePricture(response.data.images[0].url);
     });
+    setHash(window.location.href.toString());
   }, []);
+  const isSelected = (path) => {
+    hash.includes(path) ? true : false;
+  };
 
   return (
     <div className="sidebar">
       <img src={profilePricture}></img>
       {sidebar_items.map((item, index) => (
         <Link className="sidebar-btn" to={item.path} key={index}>
-          <button className="btn">{item.icon}</button>
+          <button className={isSelected(item.path) ? "btn-highlight" : "btn"}>
+            {item.icon}
+          </button>
         </Link>
       ))}
     </div>
