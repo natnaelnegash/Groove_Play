@@ -1,0 +1,70 @@
+.explore{
+    padding: 5px;
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+}
+.explore-poster{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    /* border: 2px solid; */
+    border-radius: 15px;
+    flex: 2;
+}
+.explore-poster-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    flex: 3;
+}
+.explore-items{
+    width: 100%;
+    height: 50%;
+    border: 2px solid;
+    flex: 3;
+}
+.trending{
+    position: relative;
+    flex: 1;
+    z-index: -5px;
+}
+.trending-title{
+    height: 10%;
+}
+.trending-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75%;
+    /* border: 2px solid; */
+    /* place-items: center; */
+}
+.trending-btns{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+.listen-now-btn{
+    background-color: rgba(0, 255, 255, 0.575);
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    cursor: pointer;
+}
+.like-btn{
+    background-color: rgba(0, 255, 255, 0.575);
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    cursor: pointer;
+}

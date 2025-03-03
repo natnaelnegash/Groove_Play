@@ -14,8 +14,6 @@ import PlayerContext from "./context/PlayerContext";
 
 function App() {
   const [token, setToken] = useState("");
-  const audioRef = useContext(PlayerContext);
-  const track = useContext(PlayerContext);
 
   useEffect(() => {
     const token = window.localStorage.getItem("token");
@@ -34,21 +32,23 @@ function App() {
   return !token ? (
     <Login />
   ) : (
-    <BrowserRouter className="container">
-      <Nav />
-      <div className="main-body">
-        <Sidebar />
-        <div className="interactive">
-          <Routes>
-            <Route path="/login" element={<Login />}></Route>
-            <Route path="/" element={<Dashboard />}></Route>
-            <Route path="/explore" element={<Explore />}></Route>
-            <Route path="/profile" element={<Profile />}></Route>
-            <Route path="/settings" element={<Settings />}></Route>
-            <Route path="/player" element={<Player />}></Route>
-          </Routes>
+    <BrowserRouter>
+      <div className="container">
+        <Nav />
+        <div className="main-body">
+          <Sidebar />
+          <div className="interactive">
+            <Routes>
+              <Route path="/login" element={<Login />}></Route>
+              <Route path="/" element={<Dashboard />}></Route>
+              <Route path="/explore" element={<Explore />}></Route>
+              <Route path="/profile" element={<Profile />}></Route>
+              <Route path="/settings" element={<Settings />}></Route>
+              {/* <Route path="/player" element={<Player />}></Route> */}
+            </Routes>
+          </div>
+          <Player />
         </div>
-        <audio ref={audioRef} src={track} preload="auto"></audio>
       </div>
     </BrowserRouter>
   );
